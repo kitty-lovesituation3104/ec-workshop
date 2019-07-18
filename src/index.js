@@ -6,6 +6,7 @@ import Person from "./contexts/Person";
 import Message from "./contexts/Message";
 import Action from "./contexts/Action";
 import Progress from "./contexts/Progress";
+import Kamereon from "./contexts/Kamereon";
 
 import "./styles.css";
 
@@ -16,7 +17,9 @@ ReactDOM.render(
       <Message.Provider>
         <Person.Provider>
           <Window.Provider>
-            <App />
+            <Kamereon.Provider>
+              <App />
+            </Kamereon.Provider>
           </Window.Provider>
         </Person.Provider>
       </Message.Provider>

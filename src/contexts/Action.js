@@ -16,26 +16,38 @@ const Provider = ({ children }) => {
           {
             text: "なんでもないです",
             nextMessage: "bye_1",
-            nextAction: "bye",
+            nextAction: "bye"
           }
         ]);
         break;
-        case "person_1_2":
+      case "person_1_2":
         setActionButtons([
           {
             text: "英語で星",
             nextMessage: "person_1_b",
             nextAction: "person_1_2"
           },
-          { text: "英語でお金", nextMessage: "person_1_c", nextAction: "person_1_2" },
+          {
+            text: "英語でお金",
+            nextMessage: "person_1_c",
+            nextAction: "person_1_2"
+          },
           {
             text: "英語で三角",
             nextMessage: "person_1_d",
-            nextAction: "person_1_2",
+            nextAction: "person_1_2"
           },
-          { text: "英語で水", nextMessage: "person_1_e", nextAction: "person_1_2" },
-          { text: "英語で魚", nextMessage: "person_1_f", nextAction: "person_1_2" },
-          { text: "十分です", nextMessage: "bye_1", nextAction: "bye" },
+          {
+            text: "英語で水",
+            nextMessage: "person_1_e",
+            nextAction: "person_1_2"
+          },
+          {
+            text: "英語で魚",
+            nextMessage: "person_1_f",
+            nextAction: "person_1_2"
+          },
+          { text: "十分です", nextMessage: "bye_1", nextAction: "bye" }
         ]);
         break;
       case "person_2":
@@ -68,9 +80,24 @@ const Provider = ({ children }) => {
         break;
       case "red":
         setActionButtons([
-          { text: "赤", nextMessage: "bye_2", nextAction: "byerr" },
-          { text: "青", nextMessage: "bye_2rb", nextAction: "byerb" },
-          { text: "黄", nextMessage: "bye_2", nextAction: "byery" },
+          {
+            text: "赤",
+            nextMessage: "bye_2",
+            nextAction: "byerr",
+            nextKamereon: "赤"
+          },
+          {
+            text: "青",
+            nextMessage: "bye_2rb",
+            nextAction: "byerb",
+            nextKamereon: "紫"
+          },
+          {
+            text: "黄",
+            nextMessage: "bye_2",
+            nextAction: "byery",
+            nextKamereon: "橙"
+          },
           {
             text: "戻る",
             nextMessage: "map",
@@ -81,9 +108,24 @@ const Provider = ({ children }) => {
         break;
       case "blue":
         setActionButtons([
-          { text: "赤", nextMessage: "bye_2rb", nextAction: "byerb" },
-          { text: "青", nextMessage: "bye_2", nextAction: "byebb" },
-          { text: "黄", nextMessage: "bye_2", nextAction: "byeby" },
+          {
+            text: "赤",
+            nextMessage: "bye_2rb",
+            nextAction: "byerb",
+            nextKamereon: "紫"
+          },
+          {
+            text: "青",
+            nextMessage: "bye_2",
+            nextAction: "byebb",
+            nextKamereon: "青"
+          },
+          {
+            text: "黄",
+            nextMessage: "bye_2",
+            nextAction: "byeby",
+            nextKamereon: "緑"
+          },
           {
             text: "戻る",
             nextMessage: "map",
@@ -94,9 +136,24 @@ const Provider = ({ children }) => {
         break;
       case "yellow":
         setActionButtons([
-          { text: "赤", nextMessage: "bye_2", nextAction: "byery" },
-          { text: "青", nextMessage: "bye_2", nextAction: "byeby" },
-          { text: "黄", nextMessage: "bye_2", nextAction: "byeyy" },
+          {
+            text: "赤",
+            nextMessage: "bye_2",
+            nextAction: "byery",
+            nextKamereon: "橙"
+          },
+          {
+            text: "青",
+            nextMessage: "bye_2",
+            nextAction: "byeby",
+            nextKamereon: "緑"
+          },
+          {
+            text: "黄",
+            nextMessage: "bye_2",
+            nextAction: "byeyy",
+            nextKamereon: "黄"
+          },
           {
             text: "戻る",
             nextMessage: "map",
